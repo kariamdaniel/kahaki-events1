@@ -4,43 +4,43 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah & Daniel Kipkurui',
-      event: 'Wedding Reception',
+      name: 'Wanjiku & Kamau Mwangi',
+      event: 'Traditional Wedding (Ruracio)',
       rating: 5,
-      text: 'Kahaki Events made our wedding day absolutely magical. From the stunning tent setup to the impeccable catering, every detail was perfect. Our guests are still talking about how beautiful everything was!',
-      image: 'https://images.unsplash.com/photo-1606963-1' // Placeholder for now
+      text: 'Kahaki Events made our ruracio so beautiful and stress-free. The décor and tents were perfect, and our family was so impressed. Asante sana for making our day memorable!',
+      image: '' // Placeholder for now
     },
     {
       id: 2,
-      name: 'Mathew Omondi',
-      event: 'Corporate Product Launch',
+      name: 'Brian Otieno',
+      event: 'Corporate Team Building',
       rating: 5,
-      text: 'Professional, reliable, and creative. The team at Kahaki Events transformed our vision into reality for our product launch. The AV setup was flawless and the event ran seamlessly.',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a' // Placeholder for now
+      text: 'The team at Kahaki Events organized an amazing team building for our company in Naivasha. The activities were fun and the food was delicious. We will definitely book again!',
+      image: '' // Placeholder for now
     },
     {
       id: 3,
-      name: 'Sarah Kering',
-      event: 'Anniversary Celebration',
+      name: 'Aisha Mohammed',
+      event: 'Birthday Party',
       rating: 5,
-      text: 'We hired Kahaki Events for our 25th anniversary party, and they exceeded all expectations. The décor was elegant, the food was exceptional, and the atmosphere was perfect.',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b1' // Placeholder for now
+      text: 'My daughter’s birthday was a blast thanks to Kahaki Events. The setup was colourful and the kids loved every moment. Thank you for making it special!',
+      image: '' // Placeholder for now
     },
     {
       id: 4,
-      name: 'Peter & Jane Mbugua',
-      event: 'Outdoor Wedding',
+      name: 'John & Mary Njoroge',
+      event: 'Garden Wedding',
       rating: 5,
-      text: 'Planning a wedding can be stressful, but Kahaki Events made it effortless. Their attention to detail and professional service allowed us to truly enjoy our special day.',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df' // Placeholder for now
+      text: 'We are so grateful to Kahaki Events for making our garden wedding in Karen so elegant. Everything was handled professionally and on time. Highly recommended!',
+      image: '' // Placeholder for now
     },
     {
       id: 5,
-      name: 'Kimani Mbugua',
-      event: 'Corporate Gala',
+      name: 'Grace Wambui',
+      event: 'Chama Anniversary',
       rating: 5,
-      text: 'The annual company gala was a huge success thanks to Kahaki Events. From the elegant venue styling to the seamless event coordination, everything was top-notch.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' // Placeholder for now
+      text: 'Our chama anniversary celebration was a huge success. The décor, catering, and service were all top-notch. Thank you Kahaki Events for exceeding our expectations!',
+      image: '' // Placeholder for now
     }
   ];
 

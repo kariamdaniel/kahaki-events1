@@ -24,10 +24,10 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">
-            Turning <span className="text-gradient bg-gradient-to-r from-primary-light to-primary bg-clip-text text-transparent">Moments</span>
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight transition-colors duration-300">
+            Turning <span className="text-primary transition-colors duration-300">Moments</span>
             <br />
-            into Memories
+            into <span className="text-primary transition-colors duration-300">Memories</span>
           </h1>
 
           {/* Subtitle */}

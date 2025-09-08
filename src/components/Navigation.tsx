@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { ThemeToggle } from './theme-toggle';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,10 +44,12 @@ const Navigation = () => {
               />
             </div>
             <div>
-              <h1 className={`text-xl font-serif font-bold ${isScrolled ? 'text-foreground' : 'text-white'} transition-colors duration-300`}>
+              <h1 className={`text-xl font-serif font-bold ${isScrolled ? 'text-foreground' : 'text-white'} transition-all duration-300`}>
                 Kahaki Events
               </h1>
-              <p className={`text-sm ${isScrolled ? 'text-muted-foreground' : 'text-white/90'} transition-colors duration-300`}>Turning Moments into Memories</p>
+              <p className={`text-sm whitespace-nowrap ${isScrolled ? 'text-muted-foreground' : 'text-white/90'} transition-all duration-300`}>
+                Turning Moments into Memories
+              </p>
             </div>
           </div>
 
@@ -71,19 +74,22 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground hover:text-primary transition-colors"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-foreground hover:text-primary transition-colors"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border">
-          <div className="container-custom py-4">
+          <div className="container-custom py-4 flex flex-col">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -94,13 +100,16 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="btn-primary inline-block mt-4"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Get Quote
-            </a>
+            <div className="mt-4 flex items-center gap-4">
+              <ThemeToggle />
+              <a
+                href="#contact"
+                className="btn-primary inline-block"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Get Quote
+              </a>
+            </div>
           </div>
         </div>
       )}
